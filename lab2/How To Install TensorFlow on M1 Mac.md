@@ -50,15 +50,14 @@
 
    `pip install tensorflow_datasets`
 
-10. Open a Jupyter Notebook and do the benchmark:
+10. Create new python file with next code to show device info:
 
-	`jupyter notebook`
-
-11. Create a new Python3 Notebook and run:
 	```
 	import tensorflow as tf
 
 	print("Num GPUs Available: ", len(tf.config.experimental.list_physical_devices('GPU')))
+	print("Num CPUs Available: ", len(tf.config.experimental.list_physical_devices('CPU')))
+
 	```
 
-12. Run the benchmark code, given in: [github.com/apple/tensorflow_macos/issues/25](https://github.com/apple/tensorflow_macos/issues/25)
+11. Run the benchmark code, given in: [github.com/apple/tensorflow_macos/issues/25](https://github.com/apple/tensorflow_macos/issues/25)
